@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f4d2793aa4c202f44a0a5cfc0dea9292
+guid: fbdd3de39a1b4ff439f834bd127d743e
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -166,57 +166,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tank_0
-      rect:
-        serializedVersion: 2
-        x: 18
-        y: 16
-        width: 12
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 15431a8fc9c76ac46950daf925a5e4b8
-      internalID: 839681677
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tank_1
-      rect:
-        serializedVersion: 2
-        x: 66
-        y: 16
-        width: 12
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f873439d08337d741983cf3613fbf43d
-      internalID: -1488411697
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tank_2
+      name: particle_0
       rect:
         serializedVersion: 2
         x: 114
-        y: 16
+        y: 33
         width: 12
-        height: 17
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,20 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9cb78d5998f07944a89e5276a03f0e71
-      internalID: -60731964
+      spriteID: 58c991e350bd1a149b7658ad22b00810
+      internalID: 1620095435
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tank_3
+      name: particle_1
       rect:
         serializedVersion: 2
         x: 162
-        y: 16
+        y: 33
         width: 12
-        height: 17
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,20 +203,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e10c0505bc794c84cb3264eb96d3e3d6
-      internalID: -936918984
+      spriteID: 9daa72bd5fce9e841a42dbc11c27c4fe
+      internalID: 118732700
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tank_4
+      name: particle_2
       rect:
         serializedVersion: 2
         x: 210
-        y: 16
+        y: 33
         width: 12
-        height: 17
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,20 +225,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e90a08eb09e785a4ab071d5ef22b36c0
-      internalID: 1602126075
+      spriteID: 71154e65cabb06940ad67281d200d2d0
+      internalID: 1862668946
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tank_5
+      name: particle_3
       rect:
         serializedVersion: 2
         x: 258
-        y: 16
+        y: 33
         width: 12
-        height: 17
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -291,20 +247,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e851bdebb105a2b4db90b33800690fba
-      internalID: -1778546460
+      spriteID: 6e1df020d7e8f714c95d0a35e2ec8dde
+      internalID: -513568255
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tank_6
+      name: particle_4
       rect:
         serializedVersion: 2
         x: 306
-        y: 16
+        y: 33
         width: 12
-        height: 17
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -313,8 +269,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df07a44272b0f904c90223d0b7bf997d
-      internalID: -2098606391
+      spriteID: b879283dbf87adc4d83476c2a86662a7
+      internalID: -1398049185
       vertices: []
       indices: 
       edges: []
@@ -333,15 +289,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":12.0,"y":17.0},"gridSpriteOffset":{"x":18.0,"y":15.0},"gridSpritePadding":{"x":36.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":12.0,"y":15.0},"gridSpriteOffset":{"x":18.0,"y":0.0},"gridSpritePadding":{"x":36.0,"y":48.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      tank_0: 839681677
-      tank_1: -1488411697
-      tank_2: -60731964
-      tank_3: -936918984
-      tank_4: 1602126075
-      tank_5: -1778546460
-      tank_6: -2098606391
+      particle_0: 1620095435
+      particle_1: 118732700
+      particle_2: 1862668946
+      particle_3: -513568255
+      particle_4: -1398049185
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

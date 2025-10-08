@@ -11,6 +11,7 @@ public class audioManager : MonoBehaviour
 
     [Header("music")]
     public AudioClip background;
+    public AudioClip background2;
 
     [Header("shoot")]
     public AudioClip shoot1;
@@ -37,7 +38,14 @@ public class audioManager : MonoBehaviour
 
     void Start()
     {
-        music.clip = background;
+        if (Random.Range(0, 2) == 0)
+        {
+            music.clip = background2;
+        }
+        else
+        {
+            music.clip = background;
+        }
         music.Play();
     }
 

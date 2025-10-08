@@ -2,15 +2,13 @@ using UnityEngine;
 
 public class LevelGenerator : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public GameObject bunker;
+
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        for (int i = 0; i < 4; i++)
+        {
+            Instantiate(bunker, new Vector3(Vector3.left.x + (i * 2.0f)-(2), -2.5f, 0), Quaternion.identity);
+        }
     }
 }

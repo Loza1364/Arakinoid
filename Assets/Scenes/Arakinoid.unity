@@ -186,12 +186,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4689240166119133576, guid: f4d2793aa4c202f44a0a5cfc0dea9292, type: 3}
+  m_Sprite: {fileID: 839681677, guid: f4d2793aa4c202f44a0a5cfc0dea9292, type: 3}
   m_Color: {r: 0.9960785, g: 0.9960785, b: 0.9960785, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.75, y: 1.0625}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -206,7 +206,7 @@ Transform:
   m_GameObject: {fileID: 91254990}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -4, z: 0}
+  m_LocalPosition: {x: 0, y: -4, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -250,8 +250,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3, y: 3}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 0.75, y: 1.0625}
+    newSize: {x: 0.75, y: 1.0625}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -292,7 +292,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff75bffa5c806384988541cc1a2ef0f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::playerController
+  sprites:
+  - {fileID: -1488411697, guid: f4d2793aa4c202f44a0a5cfc0dea9292, type: 3}
+  - {fileID: -60731964, guid: f4d2793aa4c202f44a0a5cfc0dea9292, type: 3}
+  - {fileID: -936918984, guid: f4d2793aa4c202f44a0a5cfc0dea9292, type: 3}
+  - {fileID: 1602126075, guid: f4d2793aa4c202f44a0a5cfc0dea9292, type: 3}
+  - {fileID: -1778546460, guid: f4d2793aa4c202f44a0a5cfc0dea9292, type: 3}
+  - {fileID: -2098606391, guid: f4d2793aa4c202f44a0a5cfc0dea9292, type: 3}
+  - {fileID: 839681677, guid: f4d2793aa4c202f44a0a5cfc0dea9292, type: 3}
   bulletPrefab: {fileID: 3163619776447712322, guid: d835f42de180dbb489c9abab3acda6fb, type: 3}
+  particle: {fileID: 2219719087209143474, guid: 7403ddc8eef14d44aaf148fb20f8da40, type: 3}
 --- !u!1 &691201340
 GameObject:
   m_ObjectHideFlags: 0
@@ -322,6 +331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef98f9d73c5044542bd37322b58ae0c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  bunker: {fileID: 2302001931581473722, guid: 9e3a8b0e8c6ec5945b65aa3f9c3c41a6, type: 3}
 --- !u!4 &691201342
 Transform:
   m_ObjectHideFlags: 0
@@ -650,7 +660,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -763,7 +773,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   music: {fileID: 1127221736}
   sfx: {fileID: 694509400}
-  background: {fileID: 0}
+  background: {fileID: 8300000, guid: c613b7c40167239488dd77823dfa0871, type: 3}
+  background2: {fileID: 8300000, guid: fb8b7b2b69526df40a53096d533637af, type: 3}
   shoot1: {fileID: 8300000, guid: cd3bc201497ebc549a679596c1296b16, type: 3}
   shoot2: {fileID: 8300000, guid: c9f62faf97b20b84491c02666e607157, type: 3}
   shoot3: {fileID: 8300000, guid: ebcb81d521431204082897accc1e6a17, type: 3}
@@ -793,5 +804,5 @@ SceneRoots:
   m_Roots:
   - {fileID: 978132180}
   - {fileID: 91254992}
-  - {fileID: 1765255628}
   - {fileID: 691201342}
+  - {fileID: 1765255628}
