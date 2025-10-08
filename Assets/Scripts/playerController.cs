@@ -2,15 +2,21 @@ using UnityEngine;
 
 public class playerController : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private audioManager sfx;
+
+    public GameObject bulletPrefab;
+
     void Start()
     {
-        
+        sfx = FindFirstObjectByType<audioManager>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            sfx.Play(sfx.shoot1);
+            Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+        }
     }
 }
