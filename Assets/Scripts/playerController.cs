@@ -8,17 +8,20 @@ public class playerController : MonoBehaviour
     private int spriteIndex;
 
     private SpriteRenderer spriteRenderer;
+    private Rigidbody2D rb;
     private audioManager sfx;
 
     public GameObject bulletPrefab;
     public GameObject particle;
 
     private float xInput = 0;
+    public float speedx = 4f;
 
     void Start()
     {
         spriteIndex = sprites.Length - 1;
         spriteRenderer = GetComponent<SpriteRenderer>();
+        rb = GetComponent<Rigidbody2D>();
         InvokeRepeating("ChangeSprite", .075f, .075f);
         sfx = FindFirstObjectByType<audioManager>();
     }
@@ -37,7 +40,11 @@ public class playerController : MonoBehaviour
         xInput = Input.GetAxisRaw("Horizontal");
         if ( spriteIndex > 1)
         {
-            transform.Translate(Vector3.right * xInput * Time.deltaTime * 4);
+            rb.linearVelocity = new Vector2( xInput * 4,0);
+        }
+        else
+        {
+            rb.linearVelocity = new Vector2(0,0);
         }
         if (Input.GetKeyDown(KeyCode.Space) && spriteIndex > 3)
         {
