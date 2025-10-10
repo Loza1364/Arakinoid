@@ -930,8 +930,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7a1fc8492daca549b13999c9d6c7080, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  enemyPrefab: []
-  row: 0
+  enemyPrefabs:
+  - {fileID: 3223099860397168561, guid: 2ca455487404cf34a94e917b40fbbe97, type: 3}
+  - {fileID: 3223099860397168561, guid: 2ca455487404cf34a94e917b40fbbe97, type: 3}
+  - {fileID: 1538535050053445093, guid: bc05ecda379f97147b61bc7576564900, type: 3}
+  - {fileID: 1538535050053445093, guid: bc05ecda379f97147b61bc7576564900, type: 3}
+  - {fileID: 4815357932089343801, guid: 9a9dd03f6d5bb9045861e2947536506c, type: 3}
+  row: 5
+  columns: 11
 --- !u!4 &1658694666
 Transform:
   m_ObjectHideFlags: 0
@@ -1009,7 +1015,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 978132180}
   - {fileID: 91254992}
-  - {fileID: 691201342}
-  - {fileID: 1765255628}
   - {fileID: 1463694070}
+  - {fileID: 691201342}
   - {fileID: 1658694666}
+  - {fileID: 1765255628}
