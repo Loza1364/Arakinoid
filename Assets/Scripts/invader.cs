@@ -3,10 +3,11 @@ using UnityEngine;
 public class invader : MonoBehaviour
 {
     public Sprite[] sprites;
+    private int spriteIndex = 0;
     private SpriteRenderer sp;
 
-    public float animationTime;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public float animationTime = 1f;
+
     void Awake()
     {
         sp = GetComponent<SpriteRenderer>();
@@ -19,6 +20,11 @@ public class invader : MonoBehaviour
 
     void Animate()
     {
-
+        spriteIndex++;
+        if (spriteIndex > sprites.Length)
+        {
+            spriteIndex = 0;
+        }
+        sp.sprite = sprites[spriteIndex];
     }
 }

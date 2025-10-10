@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: invader_01 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 7733410897126478302, guid: 0c41b067fbd712746a2fb3dfa857d628, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
     - target: {fileID: 8553008623123520304, guid: 0c41b067fbd712746a2fb3dfa857d628, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.77139
