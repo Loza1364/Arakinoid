@@ -21,7 +21,7 @@ public class invader : MonoBehaviour
     void Animate()
     {
         spriteIndex++;
-        if (spriteIndex > sprites.Length)
+        if (spriteIndex > sprites.Length - 1)
         {
             spriteIndex = 0;
         }
