@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1937636746531720892}
   m_Layer: 0
   m_Name: Bunker
-  m_TagString: Untagged
+  m_TagString: invader
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

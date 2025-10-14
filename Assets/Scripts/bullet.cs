@@ -10,13 +10,13 @@ public class bullet : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
-    public void OnTriggerEnter2D(Collider2D col)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (col.gameObject.CompareTag("invader"))
+        Debug.Log("Hit something");
+        if (other.gameObject.CompareTag("invader"))
         {
             Debug.Log("Hit invader");
-            Destroy(col.gameObject);
-            Destroy(this.gameObject);
+            Destroy(other.gameObject);
         }
     }
 }

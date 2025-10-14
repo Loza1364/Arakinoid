@@ -40,7 +40,7 @@ public class playerController : MonoBehaviour
         xInput = Input.GetAxisRaw("Horizontal");
         if ( spriteIndex > 1)
         {
-            rb.linearVelocity = new Vector2( xInput * 4,0);
+            rb.linearVelocity = new Vector2( xInput * 5,0);
         }
         else
         {
