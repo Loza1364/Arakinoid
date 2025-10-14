@@ -8,7 +8,7 @@ public class LevelGenerator : MonoBehaviour
     {
         for (int i = 0; i < 4; i++)
         {
-            Instantiate(bunker, new Vector3(Vector3.left.x + (i * 2.0f)-(2), -2.5f, 0), Quaternion.identity);
+            Instantiate(bunker, new Vector3(Vector3.left.x + (i * 8)-(11), -10f, 0), Quaternion.identity);
         }
     }
 }
