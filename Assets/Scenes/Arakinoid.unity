@@ -395,7 +395,7 @@ GameObject:
   - component: {fileID: 604338748}
   - component: {fileID: 604338747}
   m_Layer: 0
-  m_Name: Clouds
+  m_Name: clouds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -466,7 +466,7 @@ Transform:
   m_GameObject: {fileID: 604338746}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 7, z: 0}
+  m_LocalPosition: {x: 0, y: 7, z: 10}
   m_LocalScale: {x: 35.555557, y: 20, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -483,7 +483,7 @@ GameObject:
   - component: {fileID: 691201342}
   - component: {fileID: 691201341}
   m_Layer: 0
-  m_Name: LevelGenerator
+  m_Name: levelGenerator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -660,7 +660,7 @@ GameObject:
   - component: {fileID: 978132178}
   - component: {fileID: 978132181}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: mainCamera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -924,7 +924,7 @@ GameObject:
   - component: {fileID: 1463694070}
   - component: {fileID: 1463694069}
   m_Layer: 0
-  m_Name: SceneBox
+  m_Name: sceneBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1002,7 +1002,7 @@ GameObject:
   - component: {fileID: 1658694666}
   - component: {fileID: 1658694665}
   m_Layer: 0
-  m_Name: EnemySpawner
+  m_Name: enemySpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1029,6 +1029,7 @@ MonoBehaviour:
   row: 5
   columns: 11
   spacing: 2.25
+  missilePrefab: {fileID: 3665312366340412649, guid: 713680545209219489038e2275e03d53, type: 3}
   speed: 1
 --- !u!4 &1658694666
 Transform:
@@ -1110,5 +1111,5 @@ SceneRoots:
   - {fileID: 1463694070}
   - {fileID: 691201342}
   - {fileID: 1658694666}
-  - {fileID: 1765255628}
   - {fileID: 604338749}
+  - {fileID: 1765255628}

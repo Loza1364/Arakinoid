@@ -5,11 +5,14 @@ public class invader : MonoBehaviour
     public Sprite[] sprites;
     private int spriteIndex = 0;
     private SpriteRenderer sp;
+    private audioManager sfx;
 
-    public float animationTime = 1f;
+    public float animationTime = 1;
+    public System.Action killed;
 
     void Awake()
     {
+        sfx = FindFirstObjectByType<audioManager>();
         sp = GetComponent<SpriteRenderer>();
     }
 
@@ -26,5 +29,10 @@ public class invader : MonoBehaviour
             spriteIndex = 0;
         }
         sp.sprite = sprites[spriteIndex];
+    }
+    public void DestroyInvader()
+    {
+        sfx.Play(sfx.explode1);
+        this.gameObject.SetActive(false);
     }
 }

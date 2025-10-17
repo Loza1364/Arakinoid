@@ -1,21 +1,14 @@
 using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
-using TMPro;
-using UnityEngine.EventSystems;
 
 public class bullet : MonoBehaviour
 {
     void Update()
     {
         transform.Translate(Vector3.up * Time.deltaTime * 13);
-        if (transform.position.y > 16)
+ 
+        if (transform.position.y - 1 > Camera.main.ViewportToWorldPoint(Vector3.up).y)
         {
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
     }
 
@@ -23,7 +16,7 @@ public class bullet : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("enemy"))
         {
-            Destroy(collision.gameObject);
+            collision.gameObject.BroadcastMessage("DestroyInvader");
             Destroy(this.gameObject);
         }
     }
