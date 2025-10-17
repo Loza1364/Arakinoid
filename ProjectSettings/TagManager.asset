@@ -6,6 +6,7 @@ TagManager:
   tags:
   - invader
   - bullet
+  - enemy
   layers:
   - Default
   - TransparentFX

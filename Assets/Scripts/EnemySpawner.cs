@@ -54,7 +54,7 @@ public class EnemySpawner : MonoBehaviour
     }
     void AdvanceRow()
     {
-        _direction *= 1;
+        _direction *= -1;
         Vector3 position = this.transform.position;
         position.y -= 1.0f;
         this.transform.position = position;

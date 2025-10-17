@@ -1,4 +1,12 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using TMPro;
+using UnityEngine.EventSystems;
 
 public class bullet : MonoBehaviour
 {
@@ -10,13 +18,13 @@ public class bullet : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
-    void OnTriggerEnter2D(Collider2D other)
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Hit something");
-        if (other.gameObject.CompareTag("invader"))
+        if (collision.gameObject.CompareTag("enemy"))
         {
-            Debug.Log("Hit invader");
-            Destroy(other.gameObject);
+            Destroy(collision.gameObject);
+            Destroy(this.gameObject);
         }
     }
 }
