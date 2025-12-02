@@ -19,5 +19,9 @@ public class bullet : MonoBehaviour
             collision.gameObject.BroadcastMessage("DestroyInvader");
             Destroy(this.gameObject);
         }
+        if (collision.gameObject.CompareTag("Bunker"))
+        {
+            Destroy(this.gameObject);
+        }
     }
 }
